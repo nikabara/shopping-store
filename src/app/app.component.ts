@@ -12,25 +12,6 @@ import { Observable } from 'rxjs';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'shopping-store';
-  items: Item[] = [];
-
-  constructor(private mockApiService: MockApiService) { }
-
-  ngOnInit(): void {
-    this.getItems();
-  }
-
-  getItems(): void {
-    this.mockApiService.getItems().subscribe(
-      (data: Item[]) => {
-        this.items = data;
-        console.log(data);
-      },
-      (error) => {
-        console.log(error);
-      }
-    )
-  }
 }

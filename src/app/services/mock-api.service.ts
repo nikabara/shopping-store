@@ -12,6 +12,12 @@ export class MockApiService {
   constructor(private http: HttpClient) { }
 
   getItems(): Observable<Item[]> {
+    console.log("1")
     return this.http.get<Item[]>(`${this.apiUrl}/items`);
+  }
+
+  getItem(id: number): Observable<Item[]> {
+    console.log("2")
+    return this.http.get<Item[]>(`${this.apiUrl}/items/${id}`)
   }
 }
