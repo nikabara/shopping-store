@@ -1,0 +1,29 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+div {
+    width: 400px;
+    height: 500px;
+    background-color: beige;
+}
+
+h2 {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+img {
+    margin-top: 15px;
+    width: 100%;
+}
+
+h3, h4, h5 {
+    margin-top: 15px;
+    margin-left: 15px;
+    font-size: 20px;
+}

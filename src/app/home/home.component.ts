@@ -1,6 +1,5 @@
 import { MockApiService } from './../services/mock-api.service';
 import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { Item } from '../app.config';
 import { Observable } from 'rxjs';
 import { CommonModule } from '@angular/common';
@@ -8,7 +7,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterOutlet, CommonModule],
+  imports: [CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
